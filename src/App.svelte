@@ -23,7 +23,7 @@
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(3, auto);
+		grid-template-rows: repeat(2, auto);
 	}
 
 
