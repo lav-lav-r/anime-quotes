@@ -27,27 +27,27 @@
 .quote-container {
   grid-column: 1 / 3;
 }
-blockquote {
+.quote-container > blockquote {
   color: #1C1013;
   border: 1px solid black;
-
-
  }
-p {
+.quote-container > p {
   border: 1px solid red;
 
   text-align-last: right;
+  padding-right: 2em;
  }
+
 .icon-container {
-  border: 1px solid purple;
+  border: 1px solid purple; /*DEBUG*/
   grid-row: 2 / 3;
  }
+/*MISC*/
+/*----*/
 svg {
   width: 40px;
-  /* color: red; */
-  /* background-color: #1C1013; */
- }
+}
 button {
   cursor: pointer;
- }
+}
 </style>
