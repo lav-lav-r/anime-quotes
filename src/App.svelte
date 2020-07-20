@@ -5,9 +5,9 @@
 <main id="quote-box">
 	<Quote/>
 </main>
-<div>
-	<p>Made by Marcus L. De Ugarte R.</p>
-	<p>Powered by <a href="#">Api Name</a></p>
+<div class="info">
+	<p class="">Made by Marcus L. De Ugarte R.</p>
+	<p class="">Powered by <a href="#">Api Name</a></p>
 </div>
 
 
@@ -41,6 +41,38 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(2, auto);
+	}
+
+	.info {
+		margin-top: .75rem;
+		border: 1px solid var(--text);
+		border-radius: 10px;
+		cursor: pointer;
+
+		display: flex;
+		justify-content: space-between;
+		padding: 0 1em 0 1em;
+		height: .50rem;
+		overflow: hidden;
+		transition: 200ms;
+
+		position: relative;
+		background-color: var(--text);
+	}
+	.info::before {
+		content: "🞃";
+		position: absolute;
+		display: inline-block;
+		transform: rotate(45deg);
+		top: -10px;
+		left: 50%;
+		transform: translate(-50%);
+		color: var(--background);
+	}
+	.info:hover {
+		height: 3rem;
+		background-color: var(--background);
+		border: 2px solid var(--text);
 	}
 
 	@media screen and (max-width: 768px) {
