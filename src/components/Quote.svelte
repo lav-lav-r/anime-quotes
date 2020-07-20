@@ -19,12 +19,12 @@ function refresh(){
 };
 </script>
 
-<!-- {#if state}
+{#if state}
 <div bind:this={quote} transition:slide="{{delay: 250, duration: 300, easing: quintOut}}" class="quote-container">
   <blockquote>There is nothing permanent except change.</blockquote>
   <p>Heraclitus</p>
 </div>
-{/if} -->
+{/if}
 
 <div class="icon-container">
   <button>
@@ -64,6 +64,7 @@ function refresh(){
   background: none;
   border: none;
   cursor: pointer;
+  animation: shake 400ms linear;
 }
 /*MISC*/
 /*----*/
@@ -72,5 +73,13 @@ svg {
 }
 .right-align {
   place-content: flex-end;
+}
+/*Animation*/
+/*---------*/
+@keyframes shake {
+  0%    {transform: rotate(0deg)  }
+  25%   {transform: rotate(-10deg)}
+  75%   {transform: rotate(10deg) }
+  100%  {transform: rotate(0deg)  }
 }
 </style>
