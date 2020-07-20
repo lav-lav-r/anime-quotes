@@ -16,7 +16,7 @@
 
 	main {
 		max-width: 90%;
-		width: 620px;
+		width: 550px;
 		background-color: #69444E;
 		box-shadow: 0 0 6px #1C1013;
 		border-radius: 5px;

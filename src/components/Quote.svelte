@@ -58,14 +58,14 @@ function refresh(){
 .quote-container > blockquote {
   color: #1C1013;
   font-size: 2.25rem;
-  border: 1px solid black; /*DeBUG*/
+  margin-top: 0;
+  margin-bottom: 1rem;
  }
 .quote-container > p {
-  border: 1px solid red; /*DEBUG*/
-
   text-align-last: right;
-  padding-right: 3em;
-  font-size: 1.5rem;
+  padding-right: 2em;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
  }
 .icon-container {
   display: flex;
@@ -89,9 +89,6 @@ svg {
 }
 .right-align {
   place-content: flex-end;
-}
-.noDisplay {
-  display: none;
 }
 /*Animation*/
 /*---------*/
