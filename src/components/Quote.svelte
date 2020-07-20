@@ -57,13 +57,15 @@ function refresh(){
 }
 .quote-container > blockquote {
   color: #1C1013;
+  font-size: 2.25rem;
   border: 1px solid black; /*DeBUG*/
  }
 .quote-container > p {
   border: 1px solid red; /*DEBUG*/
 
   text-align-last: right;
-  padding-right: 2em;
+  padding-right: 3em;
+  font-size: 1.5rem;
  }
 .icon-container {
   display: flex;

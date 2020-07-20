@@ -17,11 +17,11 @@
 
 	main {
 		max-width: 90%;
-		width: 720px;
+		width: 620px;
 		background-color: #69444E;
 		box-shadow: 0 0 6px #1C1013;
 		border-radius: 5px;
-		padding: 1em 1em .10em 1em;
+		padding: 2.25em 3em 2em 3em;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
