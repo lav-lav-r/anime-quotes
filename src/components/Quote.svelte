@@ -6,6 +6,8 @@ import { quintOut } from 'svelte/easing';
 let quote;
 let btnRefresh;
 onMount( () => {
+  //Fetch Here
+
   setTimeout( () => {
     state = true;
   }, 1000);
@@ -22,12 +24,13 @@ function refresh(){
 };
 
 let quoteText = "There is nothing permanent, except change.";
-let authorText = "Heraclitus";
+let character = "Heraclitus";
+let animeTitle = "Anime";
 let tweetLink = "";
-if(quoteText === "" || authorText === ""){
+if(quoteText === "" || character === ""){
   tweetLink = `https://twitter.com/intent/tweet?hashtags=growth`;
 } else {
-  tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text=${quoteText} -${authorText}`;
+  tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text=${quoteText} -${character}`;
 };
 </script>
 
@@ -38,7 +41,7 @@ if(quoteText === "" || authorText === ""){
       <path fill="currentColor" d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
     </svg>
     {quoteText}</blockquote>
-  <p id="author">{authorText}</p>
+  <p id="author">{character} <em>from</em> {animeTitle}</p>
 </div>
 {/if}
 
@@ -111,5 +114,15 @@ svg {
   0%    {transform: rotate(0deg)    }
   50%   {transform: rotate(180deg)  }
   100%  {transform: rotate(360deg)  }
+}
+/*Media Queries*/
+/*-------------*/
+@media screen and (max-width: 768px) {
+  .quote-container > blockquote {
+    font-size: 1.5rem;
+  }
+  .quote-container > p {
+    font-size: 1rem;
+  }
 }
 </style>

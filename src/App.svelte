@@ -27,8 +27,7 @@
 	}
 
 	main {
-		max-width: 90%;
-		width: 550px;
+		max-width: 550px;
 		background-color: var(--background);
 		box-shadow: 0 0 10px var(--accent);
 		border-radius: 5px;
@@ -39,9 +38,11 @@
 		grid-template-rows: repeat(2, auto);
 	}
 
-	@media (min-width: 640px) {
+	@media screen and (max-width: 768px) {
 		main {
-			max-width: none;
+			max-width: 90%;
+			margin: auto;
+			padding: 1em;
 		}
 	}
 </style>
