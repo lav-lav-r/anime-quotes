@@ -5,6 +5,11 @@
 <main id="quote-box">
 	<Quote/>
 </main>
+<div>
+	<p>Made by Marcus L. De Ugarte R.</p>
+	<p>Powered by <a href="#">Api Name</a></p>
+</div>
+
 
 <style>
 	:global(:root) {
@@ -40,7 +45,7 @@
 
 	@media screen and (max-width: 768px) {
 		main {
-			max-width: 90%;
+			max-width: 85%;
 			margin: auto;
 			padding: 1em;
 		}
