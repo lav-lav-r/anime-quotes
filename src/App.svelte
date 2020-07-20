@@ -9,7 +9,7 @@
 <style>
 	:global(:root) {
 		--background: #FCFFF7;
-		--accent: #1C1013;
+		--accent: #E69173;
 		--text: #E53D00;
 	}
 	:global(body) {
@@ -30,7 +30,7 @@
 		max-width: 90%;
 		width: 550px;
 		background-color: var(--background);
-		box-shadow: 0 0 6px var(--accent);
+		box-shadow: 0 0 10px var(--accent);
 		border-radius: 5px;
 		padding: 2.25em 3em 2em 3em;
 
