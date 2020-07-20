@@ -20,7 +20,7 @@
 		background-color: #69444E;
 		box-shadow: 0 0 6px #1C1013;
 		border-radius: 5px;
-		padding: 0 1em;
+		padding: 1em 1em .10em 1em;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;

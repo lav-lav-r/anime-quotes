@@ -19,12 +19,12 @@ function refresh(){
 };
 </script>
 
-{#if state}
+<!-- {#if state}
 <div bind:this={quote} transition:slide="{{delay: 250, duration: 300, easing: quintOut}}" class="quote-container">
   <blockquote>There is nothing permanent except change.</blockquote>
   <p>Heraclitus</p>
 </div>
-{/if}
+{/if} -->
 
 <div class="icon-container">
   <button>
