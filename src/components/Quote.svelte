@@ -23,7 +23,12 @@ function refresh(){
 
 let quoteText = "There is nothing permanent, except change.";
 let authorText = "Heraclitus";
-let tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text=${quoteText} -${authorText}`;
+let tweetLink = "";
+if(quoteText === "" || authorText === ""){
+  tweetLink = `https://twitter.com/intent/tweet?hashtags=growth`;
+} else {
+  tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text=${quoteText} -${authorText}`;
+};
 </script>
 
 {#if state}
