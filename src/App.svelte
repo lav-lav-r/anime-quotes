@@ -6,7 +6,7 @@
 	<Quote/>
 </main>
 <div class="info">
-	<p class="">Made by Marcus L. De Ugarte R.</p>
+	<p class="">🍵 Marcus Leonardo</p>
 	<p class="">Powered by <a href="#">Api Name</a></p>
 </div>
 
