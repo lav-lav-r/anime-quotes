@@ -7,18 +7,30 @@
 </main>
 
 <style>
+	:global(:root) {
+		--background: #69444E;
+		--accent: #1C1013;
+		--text: #333333;
+	}
 	:global(body) {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+
 		height: 100vh;
 		display: grid;
 		place-content: center;
-		background-color: #633F49;
+		
+		font-family: 'Rubik', sans-serif;
+		background-color: var(--background);
+		color: var(--text);
 	}
 
 	main {
 		max-width: 90%;
 		width: 550px;
-		background-color: #69444E;
-		box-shadow: 0 0 6px #1C1013;
+		background-color: var(--background);
+		box-shadow: 0 0 6px var(--accent);
 		border-radius: 5px;
 		padding: 2.25em 3em 2em 3em;
 
@@ -26,7 +38,6 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(2, auto);
 	}
-
 
 	@media (min-width: 640px) {
 		main {
