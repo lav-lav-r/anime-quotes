@@ -12,6 +12,7 @@
 		display: grid;
 		place-content: center;
 		background-color: #633F49;
+		font-family: 'Rubik', sans-serif;
 	}
 
 	main {
