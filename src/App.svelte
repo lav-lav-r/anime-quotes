@@ -2,7 +2,7 @@
 	import Quote from './components/Quote.svelte';
 </script>
 
-<main>
+<main id="quote-box">
 	<Quote/>
 </main>
 
