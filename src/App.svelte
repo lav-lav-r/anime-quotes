@@ -8,9 +8,9 @@
 
 <style>
 	:global(:root) {
-		--background: #69444E;
+		--background: #FCFFF7;
 		--accent: #1C1013;
-		--text: #333333;
+		--text: #E53D00;
 	}
 	:global(body) {
 		margin: 0;
@@ -20,7 +20,7 @@
 		height: 100vh;
 		display: grid;
 		place-content: center;
-		
+
 		font-family: 'Rubik', sans-serif;
 		background-color: var(--background);
 		color: var(--text);
