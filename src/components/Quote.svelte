@@ -4,6 +4,7 @@ import { slide } from 'svelte/transition';
 import { quintOut } from 'svelte/easing';
 
 let quote;
+let btnRefresh;
 onMount( () => {
   setTimeout( () => {
     state = true;
@@ -13,9 +14,11 @@ onMount( () => {
 let state = false;
 function refresh(){
   state = false;
+  btnRefresh.classList.remove("ani-rotate");
   setTimeout( () => {
     state = true;
-  }, 500);
+    btnRefresh.classList.add("ani-rotate");
+  }, 250);
 };
 </script>
 
@@ -35,7 +38,7 @@ function refresh(){
 </div>
 
 <div class="icon-container right-align">
-  <button on:click={refresh} class="ani-rotate">
+  <button bind:this={btnRefresh} on:click={refresh} class="ani-rotate">
     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="redo" class="svg-inline--fa fa-redo fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
       <path fill="currentColor" d="M500.33 0h-47.41a12 12 0 0 0-12 12.57l4 82.76A247.42 247.42 0 0 0 256 8C119.34 8 7.9 119.53 8 256.19 8.1 393.07 119.1 504 256 504a247.1 247.1 0 0 0 166.18-63.91 12 12 0 0 0 .48-17.43l-34-34a12 12 0 0 0-16.38-.55A176 176 0 1 1 402.1 157.8l-101.53-4.87a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12h200.33a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12z"></path>
     </svg>
@@ -48,10 +51,10 @@ function refresh(){
 }
 .quote-container > blockquote {
   color: #1C1013;
-  border: 1px solid black;
+  border: 1px solid black; /*DeBUG*/
  }
 .quote-container > p {
-  border: 1px solid red;
+  border: 1px solid red; /*DEBUG*/
 
   text-align-last: right;
   padding-right: 2em;
