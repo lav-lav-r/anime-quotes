@@ -65,7 +65,7 @@ function refresh(){
   border: none;
   cursor: pointer;
 }
-.icon-container > .ani-shake {
+.icon-container > .ani-shake:hover {
   animation: shake 400ms linear;
 }
 .icon-container > .ani-rotate {
