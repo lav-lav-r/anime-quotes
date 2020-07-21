@@ -70,6 +70,7 @@ if(quoteText === "" || character === ""){
 .quote-container > blockquote {
   color: var(--text);
   font-size: 2.25rem;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 1rem;
  }
@@ -78,6 +79,7 @@ if(quoteText === "" || character === ""){
   padding-right: 2em;
   padding-bottom: 1rem;
   font-size: 1.25rem;
+  font-weight: 300;
  }
 .icon-container {
   display: flex;
