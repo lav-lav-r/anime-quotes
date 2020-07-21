@@ -6,7 +6,7 @@
 	<Quote/>
 </main>
 <div class="info">
-	<p><span>🍵</span> <a href="https://www.rainfallproject.com/">Marcus Leonardo</a></p>
+	<p><span class="tooltipText">🍵</span> <a href="https://www.rainfallproject.com/">Marcus Leonardo</a></p>
 	<p>Powered by <a href="https://github.com/RocktimSaikia/anime-chan">Anime-chan</a></p>
 </div>
 
@@ -54,7 +54,7 @@
 		align-items: baseline;
 		padding: 0 1em 0 1em;
 		height: .40rem;
-		overflow: hidden;
+		/* overflow: hidden; */
 		transition: 200ms;
 
 		position: relative;
@@ -77,6 +77,11 @@
 	}
 	.info > p {
 		margin: .35em;
+		opacity: 0;
+		transition: 150ms;
+	}
+	.info:hover > p {
+		opacity: 1;
 	}
 	.info > p > a {
 		text-decoration: none;
@@ -85,6 +90,26 @@
 	}
 	.info > p:nth-child(2) > a {
 		font-weight: bold;
+	}
+
+	.tooltipText {
+		position: relative;
+	}
+	.tooltipText::before {
+		position: absolute;
+		content: "tea!";
+		visibility: hidden;
+		top: -35px;
+		left: 50%;
+		transform: translate(-50%);
+		padding: .25em;
+		background-color: var(--background);
+		border: 2px solid var(--text);
+		border-radius: 5px;
+	}
+	.tooltipText:hover::before {
+		visibility: visible;
+
 	}
 
 	@media screen and (max-width: 768px) {
