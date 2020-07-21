@@ -7,19 +7,19 @@ let quote;
 let btnRefresh;
 onMount( () => {
   //Fetch Data
-  fetch('https://anime-chan.herokuapp.com/api/quotes/random')
-    .then( (res) => {
-      if(res.ok){
-        return res.json();
-      } else {
-        console.log("Error!");
-      };
-    })
-    .then( (data) => {
-      quoteText = data[0].quote;
-      character = data[0].character;
-      animeTitle = data[0].anime;
-    });
+  // fetch('https://anime-chan.herokuapp.com/api/quotes/random')
+  //   .then( (res) => {
+  //     if(res.ok){
+  //       return res.json();
+  //     } else {
+  //       console.log("Error!");
+  //     };
+  //   })
+  //   .then( (data) => {
+  //     quoteText = data[0].quote;
+  //     character = data[0].character;
+  //     animeTitle = data[0].anime;
+  //   });
 
   setTimeout( () => {
     state = true;

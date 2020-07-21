@@ -7,7 +7,7 @@
 </main>
 <div class="info">
 	<p>🍵 Marcus Leonardo</p>
-	<p>Powered by <a href="#">Api Name</a></p>
+	<p>Powered by <a href="https://github.com/RocktimSaikia/anime-chan">Anime-chan</a></p>
 </div>
 
 
@@ -77,6 +77,11 @@
 	}
 	.info > p {
 		margin: .35em;
+	}
+	.info > p > a {
+		text-decoration: none;
+		font-weight: bold;
+		color: var(--text);
 	}
 
 	@media screen and (max-width: 768px) {
