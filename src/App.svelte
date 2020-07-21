@@ -6,8 +6,8 @@
 	<Quote/>
 </main>
 <div class="info">
-	<p class="">🍵 Marcus Leonardo</p>
-	<p class="">Powered by <a href="#">Api Name</a></p>
+	<p>🍵 Marcus Leonardo</p>
+	<p>Powered by <a href="#">Api Name</a></p>
 </div>
 
 
