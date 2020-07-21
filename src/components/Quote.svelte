@@ -43,7 +43,7 @@ let tweetLink = "";
 $: if(quoteText === "" || character === ""){
      tweetLink = `https://twitter.com/intent/tweet?hashtags=growth`;
    } else {
-     tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text=${quoteText} -${character}`;
+     tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text="${quoteText}" -${character}`;
    };
 </script>
 
