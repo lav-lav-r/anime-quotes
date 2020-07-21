@@ -6,8 +6,8 @@
 	<Quote/>
 </main>
 <div class="info">
-	<p><span class="tooltipText">🍵</span> <a href="https://www.rainfallproject.com/">Marcus Leonardo</a></p>
-	<p>Powered by <a href="https://github.com/RocktimSaikia/anime-chan">Anime-chan</a></p>
+	<p><span class="tooltipText">🍵</span> <a href="https://www.rainfallproject.com/" target="_blank">Marcus Leonardo</a></p>
+	<p>Powered by <a href="https://github.com/RocktimSaikia/anime-chan" target="_blank">Anime-chan</a></p>
 </div>
 
 
