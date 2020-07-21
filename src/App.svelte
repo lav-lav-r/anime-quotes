@@ -32,7 +32,7 @@
 	}
 
 	main {
-		max-width: 550px;
+		max-width: 720px;
 		background-color: var(--background);
 		box-shadow: 0 0 10px var(--accent);
 		border-radius: 5px;

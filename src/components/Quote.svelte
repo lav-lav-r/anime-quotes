@@ -6,7 +6,20 @@ import { quintOut } from 'svelte/easing';
 let quote;
 let btnRefresh;
 onMount( () => {
-  //Fetch Here
+  //Fetch Data
+  fetch('https://anime-chan.herokuapp.com/api/quotes/random')
+    .then( (res) => {
+      if(res.ok){
+        return res.json();
+      } else {
+        console.log("Error!");
+      };
+    })
+    .then( (data) => {
+      quoteText = data[0].quote;
+      character = data[0].character;
+      animeTitle = data[0].anime;
+    });
 
   setTimeout( () => {
     state = true;
@@ -23,15 +36,15 @@ function refresh(){
   }, 250);
 };
 
-let quoteText = "There is nothing permanent, except change.";
-let character = "Heraclitus";
-let animeTitle = "Anime";
+let quoteText = "";
+let character = "";
+let animeTitle = "";
 let tweetLink = "";
-if(quoteText === "" || character === ""){
-  tweetLink = `https://twitter.com/intent/tweet?hashtags=growth`;
-} else {
-  tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text=${quoteText} -${character}`;
-};
+$: if(quoteText === "" || character === ""){
+     tweetLink = `https://twitter.com/intent/tweet?hashtags=growth`;
+   } else {
+     tweetLink = `https://twitter.com/intent/tweet?hashtags=growth&text=${quoteText} -${character}`;
+   };
 </script>
 
 {#if state}
