@@ -51,8 +51,9 @@
 
 		display: flex;
 		justify-content: space-between;
+		align-items: baseline;
 		padding: 0 1em 0 1em;
-		height: .50rem;
+		height: .40rem;
 		overflow: hidden;
 		transition: 200ms;
 
@@ -64,15 +65,18 @@
 		position: absolute;
 		display: inline-block;
 		transform: rotate(45deg);
-		top: -10px;
+		top: -11px;
 		left: 50%;
 		transform: translate(-50%);
 		color: var(--background);
 	}
 	.info:hover {
-		height: 3rem;
+		height: 2rem;
 		background-color: var(--background);
 		border: 2px solid var(--text);
+	}
+	.info > p {
+		margin: .35em;
 	}
 
 	@media screen and (max-width: 768px) {
