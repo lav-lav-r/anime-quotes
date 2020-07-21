@@ -6,7 +6,7 @@
 	<Quote/>
 </main>
 <div class="info">
-	<p>🍵 Marcus Leonardo</p>
+	<p><span>🍵</span> <a href="https://www.rainfallproject.com/">Marcus Leonardo</a></p>
 	<p>Powered by <a href="https://github.com/RocktimSaikia/anime-chan">Anime-chan</a></p>
 </div>
 
@@ -47,7 +47,7 @@
 		margin-top: .75rem;
 		border: 1px solid var(--text);
 		border-radius: 10px;
-		cursor: pointer;
+		cursor: help;
 
 		display: flex;
 		justify-content: space-between;
@@ -80,8 +80,11 @@
 	}
 	.info > p > a {
 		text-decoration: none;
-		font-weight: bold;
 		color: var(--text);
+		cursor: pointer;
+	}
+	.info > p:nth-child(2) > a {
+		font-weight: bold;
 	}
 
 	@media screen and (max-width: 768px) {
