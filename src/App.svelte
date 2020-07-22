@@ -127,7 +127,7 @@
 			height: 1rem;
 
 			flex-direction: column;
-			justify-content: center;
+			align-items: center;
 		}
 		.info:hover {
 			height: 4rem;
