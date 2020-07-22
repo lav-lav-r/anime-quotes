@@ -7,7 +7,7 @@ let quote;
 let btnRefresh;
 onMount( () => {
   //Fetch Data on First Load
-  // getAnimeQuote();
+  getAnimeQuote();
 
   setTimeout( () => {
     state = true;
@@ -33,7 +33,7 @@ function getAnimeQuote(){
 let state = false;
 function refresh(){
   state = false;
-  // getAnimeQuote(); //Fetch Another Random Quote on Refresh Icon Click
+  getAnimeQuote(); //Fetch Another Random Quote on Refresh Icon Click
   btnRefresh.classList.remove("ani-rotate");
   setTimeout( () => {
     state = true;
@@ -141,8 +141,17 @@ svg {
   .quote-container > blockquote {
     font-size: 1.5rem;
   }
+  .quote-container > blockquote > svg {
+    width: 28px;
+  }
   .quote-container > p {
     font-size: 1rem;
+  }
+  .icon-container > button > a > svg {
+    width: 35px;
+  }
+  .icon-container > button > svg {
+    width: 32px;
   }
 }
 </style>
