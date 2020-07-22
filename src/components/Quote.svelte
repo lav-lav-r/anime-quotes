@@ -7,7 +7,7 @@ let quote;
 let btnRefresh;
 onMount( () => {
   //Fetch Data on First Load
-  getAnimeQuote();
+  // getAnimeQuote();
 
   setTimeout( () => {
     state = true;
@@ -33,7 +33,7 @@ function getAnimeQuote(){
 let state = false;
 function refresh(){
   state = false;
-  getAnimeQuote(); //Fetch Another Random Quote on Refresh Icon Click
+  // getAnimeQuote(); //Fetch Another Random Quote on Refresh Icon Click
   btnRefresh.classList.remove("ani-rotate");
   setTimeout( () => {
     state = true;

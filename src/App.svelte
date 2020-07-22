@@ -78,10 +78,13 @@
 	.info > p {
 		margin: .35em;
 		opacity: 0;
-		transition: 150ms;
+		visibility: hidden;
+		transition: opacity 100ms ease 100ms;
+		transition: visibility 100ms ease 100ms;
 	}
 	.info:hover > p {
 		opacity: 1;
+		visibility: visible;
 	}
 	.info > p > a {
 		text-decoration: none;
@@ -118,5 +121,17 @@
 			margin: auto;
 			padding: 1em;
 		}
+		.info {
+			max-width: 85%;
+			margin: .5em auto;
+			height: 1rem;
+
+			flex-direction: column;
+			justify-content: center;
+		}
+		.info:hover {
+			height: 4rem;
+		}
 	}
+	
 </style>
