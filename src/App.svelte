@@ -123,12 +123,14 @@
 		}
 		.info {
 			max-width: 85%;
-			margin: .5em auto;
 			height: 1rem;
 
 			flex-direction: column;
 			align-items: center;
 		}
+		.info::before {
+		content: "";
+	}
 		.info:hover {
 			height: 4rem;
 		}
