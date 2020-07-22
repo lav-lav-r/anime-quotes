@@ -123,6 +123,7 @@
 		}
 		.info {
 			max-width: 85%;
+			margin: .5em auto;
 			height: 1rem;
 
 			flex-direction: column;
