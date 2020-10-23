@@ -15,7 +15,7 @@ onMount( () => {
 });
 
 function getAnimeQuote(){
-  fetch('https://anime-chan.herokuapp.com/api/quotes/random')
+  fetch('https://animechanapi.xyz/api/quotes/random')
     .then( (res) => {
       if(res.ok){
         return res.json();
@@ -24,9 +24,9 @@ function getAnimeQuote(){
       };
     })
     .then( (data) => {
-      quoteText = data[0].quote;
-      character = data[0].character;
-      animeTitle = data[0].anime;
+      quoteText = data.data[0].quote;
+      character = data.data[0].character;
+      animeTitle = data.data[0].anime;
     });
 };
 
