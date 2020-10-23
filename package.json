@@ -1,5 +1,5 @@
 {
-  "name": "app-anime-qoutes",
+  "name": "app-anime-quotes",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
